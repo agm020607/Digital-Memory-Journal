@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>My Memory Journal</title>
+</head>
+<body>
+    <h1>My Memory Journal</h1>
+
+    <!-- Memory Entry Form -->
+    <form>
+        <label for="memoryDate">Date:</label>
+        <input type="date" id="memoryDate" name="memoryDate" required>
+        <label for="memoryText">Memory:</label>
+        <textarea id="memoryText" name="memoryText" rows="4" cols="50" required></textarea>
+        <label for="memoryPhoto">Upload Photo:</label>
+        <input type="file" id="memoryPhoto" name="memoryPhoto" accept="image/*">
+        <button type="button" onclick="addMemory()">Add Memory</button>
+    </form>
+
+    <!-- Display Memories -->
+    <div id="memoriesContainer"></div>
+
+</body>
+</html>
